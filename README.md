@@ -8,13 +8,10 @@ For this project, you will be building your project using IntelliJ IDEA (Ultimat
 
 
 ## SUPPLEMENTAL RESOURCES  
-1. How to set up SSH for GitLab? 
+1.	How to clone a project to IntelliJ using Git?
 
-On the top right corner, select your profile and click on preferences. Navigate to the 'SSH Keys' section on the right. Create your ssh key in your terminal, copy the public key and paste it into the key section. Give it a name and your SSH key will be set up.
+> Ensure that you have Git installed on your system and that IntelliJ is installed using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a prompt to clone the proejct. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.  
 
-2.  How to clone a project to IntelliJ using Git?
-
-Once your SSH key has been set up, navigate to the repository and click the blue clone button on the top right. You will see a section that states 'IntelliJ IDEA (SSH)'. Make sure IntelliJ is installed and the project will be created onto your local system.
 ## SUPPORT
 If you need additional support, please navigate to the course page and reach out to your course instructor.
 ## FUTURE USE
