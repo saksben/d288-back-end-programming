@@ -7,6 +7,8 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Data
@@ -48,5 +50,30 @@ public class Cart {
     private Set<CartItem> cartItem;
 
     public Cart() {
+    }
+
+    public void add(CartItem item) {
+        if (item != null) {
+            if (cartItem == null) {
+                cartItem = new HashSet<>();
+            }
+            cartItem.add(item);
+            item.setCart(this);
+        }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Cart cart = (Cart) o;
+
+        return Objects.equals(id, cart.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
     }
 }

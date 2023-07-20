@@ -6,6 +6,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.Objects;
 import java.util.Set;
 
 @Data
@@ -49,5 +50,20 @@ public class Customer {
     private Set<Cart> carts;
 
     public Customer() {
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Customer customer = (Customer) o;
+
+        return Objects.equals(id, customer.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
     }
 }

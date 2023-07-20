@@ -7,6 +7,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.Objects;
 import java.util.Set;
 
 @Data
@@ -44,5 +45,20 @@ public class Excursion {
     private Set<CartItem> cartItems;
 
     public Excursion() {
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Excursion excursion = (Excursion) o;
+
+        return Objects.equals(id, excursion.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
     }
 }
