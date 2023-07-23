@@ -1,6 +1,9 @@
 package com.assessment.demo.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -19,18 +22,27 @@ public class Customer {
     @Column(name = "customer_id")
     private Long id;
 
+    @NotBlank(message = "First name is mandatory")
     @Column(name = "customer_first_name")
     private String firstName;
 
+    @NotBlank(message = "Last Name is mandatory")
     @Column(name = "customer_last_name")
     private String lastName;
 
+    @NotBlank(message = "Address is mandatory")
     @Column(name = "address")
     private String address;
 
+    @NotBlank(message = "Postal Code is mandatory")
+    @Size(min=5, max=5, message = "Postal Code must be 5 numbers long")
+    @Positive(message = "Postal Code must be a positive number")
     @Column(name = "postal_code")
     private String postal_code;
 
+    @NotBlank(message = "Phone number is mandatory")
+    @Size(min=10, max=10, message = "Phone number must be 10 numbers long in the US (exclude country code)")
+    @Positive(message = "Phone number must be a positive number")
     @Column(name = "phone")
     private String phone;
 
