@@ -1,10 +1,12 @@
 package com.assessment.demo.services;
 
 import com.assessment.demo.dao.CartRepository;
+import com.assessment.demo.dao.CustomerRepository;
 import com.assessment.demo.dto.Purchase;
 import com.assessment.demo.dto.PurchaseResponse;
 import com.assessment.demo.entities.Cart;
 import com.assessment.demo.entities.CartItem;
+import com.assessment.demo.entities.Customer;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,9 +16,14 @@ import java.util.UUID;
 @Service
 public class CheckoutServiceImpl implements CheckoutService {
 
+    private CustomerRepository customerRepository;
     private CartRepository cartRepository;
 
-    public CheckoutServiceImpl(CartRepository cartRepository) {
+    public CheckoutServiceImpl(
+            CustomerRepository customerRepository,
+            CartRepository cartRepository
+    ){
+        this.customerRepository = customerRepository;
         this.cartRepository = cartRepository;
     }
 
@@ -35,8 +42,16 @@ public class CheckoutServiceImpl implements CheckoutService {
         Set<CartItem> cartItems = purchase.getCartItems();
         cartItems.forEach(item -> cart.add(item));
 
-        // save to the database
+        // save cart to the database
         cartRepository.save(cart);
+
+        //populate customer with cart
+        Customer customer = purchase.getCustomer();
+        customer.add(cart);
+
+        // save customer to the database
+        // for some reason the tracking number doesn't populate unless this is commented out
+//        customerRepository.save(customer);
 
         // return a response
         return new PurchaseResponse(orderTrackingNumber);

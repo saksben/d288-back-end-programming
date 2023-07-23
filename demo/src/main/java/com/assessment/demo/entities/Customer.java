@@ -5,14 +5,19 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
 @Data
+@Getter
+@Setter
 @Entity
 @Table(name = "customers")
 public class Customer {
@@ -58,10 +63,20 @@ public class Customer {
     @JoinColumn(name = "division_id")
     private Division division;
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer", cascade={CascadeType.PERSIST, CascadeType.MERGE})
     private Set<Cart> carts;
 
     public Customer() {
+    }
+
+    public void add(Cart cart) {
+        if (cart != null) {
+            if (carts == null) {
+                carts = new HashSet<>();
+            }
+            carts.add(cart);
+            cart.setCustomer(this);
+        }
     }
 
     @Override
