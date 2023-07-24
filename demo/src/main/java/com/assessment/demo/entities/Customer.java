@@ -40,14 +40,10 @@ public class Customer {
     private String address;
 
     @NotBlank(message = "Postal Code is mandatory")
-    @Size(min=5, max=5, message = "Postal Code must be 5 numbers long")
-    @Positive(message = "Postal Code must be a positive number")
     @Column(name = "postal_code")
     private String postal_code;
 
     @NotBlank(message = "Phone number is mandatory")
-    @Size(min=10, max=10, message = "Phone number must be 10 numbers long in the US (exclude country code)")
-    @Positive(message = "Phone number must be a positive number")
     @Column(name = "phone")
     private String phone;
 
@@ -67,6 +63,18 @@ public class Customer {
     private Set<Cart> carts;
 
     public Customer() {
+    }
+
+    public Customer(Long id, String firstName, String lastName, String address, String postal_code, String phone, Date create_date, Date last_update, Division division) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.postal_code = postal_code;
+        this.phone = phone;
+        this.create_date = create_date;
+        this.last_update = last_update;
+        this.division = division;
     }
 
     public void add(Cart cart) {

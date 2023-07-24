@@ -41,6 +41,11 @@ public class Division {
     public Division() {
     }
 
+    public Division(Long id, String division_name) {
+        this.id = id;
+        this.division_name = division_name;
+    }
+
     //updated, don't change or else the divisions won't populate
     @Column(name = "country_id")
     private long country_id;
