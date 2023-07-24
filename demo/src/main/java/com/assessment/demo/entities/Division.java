@@ -33,11 +33,20 @@ public class Division {
     @UpdateTimestamp
     private Date last_update;
 
-    @ManyToOne
-    @JoinColumn(name = "country_id")
+    //updated, don't change or else the divisions won't populate
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "country_id", nullable = false, insertable = false, updatable = false)
     private Country country;
 
     public Division() {
+    }
+
+    //updated, don't change or else the divisions won't populate
+    @Column(name = "country_id")
+    private long country_id;
+    public void setCountry(Country country) {
+        setCountry_id(country.getId());
+        this.country = country;
     }
 
     @Override
