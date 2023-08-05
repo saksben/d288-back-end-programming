@@ -1,7 +1,7 @@
 package com.assessment.demo.controllers;
 
-import com.assessment.demo.dto.Purchase;
-import com.assessment.demo.dto.PurchaseResponse;
+import com.assessment.demo.services.Purchase;
+import com.assessment.demo.services.PurchaseResponse;
 import com.assessment.demo.services.CheckoutService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

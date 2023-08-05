@@ -1,4 +1,4 @@
-package com.assessment.demo.dto;
+package com.assessment.demo.services;
 
 import lombok.Data;
 import lombok.Getter;
