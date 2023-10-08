@@ -32,7 +32,9 @@ Navigate to `http://localhost:8080/api` to access the back end
 
 From the home page, you will see a list of vacations available to purchase.
 
-To add yourself as a customer, click the person icon on the left side, then click `Add Customer` and enter the information, then again click `Add Customer` to add yourself to the database. Your customer profile will appear in the list of customers now.
+To add yourself as a customer, click the person icon on the left side, then click `Add Customer` and enter the information, then again click `Add Customer` to add yourself to the database.
+Validation: all information on the page must be entered; none can be blank.
+Your customer profile will appear in the list of customers now.
 
 To purchase a vacation, click the shopping cart icon next to the desired vacation. Then once you are on the vacation's profile, click `Select Excursions` and click the shopping cart icon next to the desired excursions and then click `Add Excursion` when on its profile.
 
