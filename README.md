@@ -1,27 +1,43 @@
-<strong> **DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
-# WESTERN GOVERNOR UNIVERSITY 
+# Travel Agency Backend
+
 ## D288 – BACK-END PROGRAMMING
-Welcome to Back-End Programming! This is an opportunity for students to develop object-oriented applications that can be integrated with relational databases, write code for object-oriented applications using Spring framework, and implements design patterns for object-oriented applications. 
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-## BASIC INSTRUCTIONS
-For this project, you will be building your project using IntelliJ IDEA (Ultimate Edition) in a WGU-provided lab environment. You will be working with an existing MySQL database and Angular front-end, which are supplied for you in the lab environment. You will share this project to a private external GitLab repository and backup regularly. If you wish to work on it on your local machine, you will also need to download the Angular front-end application and create your own MySQL database. Use the links on your course page to install the integrated development environments (IDE), MySQL WorkBench, and IntelliJ IDEA, and pull the project from the lab environment.  
 
+This university project was an opportunity for me to develop object-oriented applications that can be integrated with relational databases, write code for object-oriented applications using Spring framework, and implements design patterns for object-oriented applications. 
 
-## SUPPLEMENTAL RESOURCES  
-1.	How to clone a project to IntelliJ using Git?
+Through it, I was able to:
 
-> Ensure that you have Git installed on your system and that IntelliJ is installed using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a prompt to clone the proejct. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.  
+* Design an entire fully-functioning ecommerce Spring Boot back end according to UML specifications
+* Develop customer cart, checkout service, and order tracking features to fulfill travel excursion orders
+* Incorporate MVC framework using REST API, complete with validation and sample customer data
 
-2. How to create a branch and start Development?
+** BASIC INSTRUCTIONS
 
-- GitLab method
-> Press the '+' button located near your branch name. In the dropdown list, press the 'New branch' button. This will allow you to create a name for your branch. Once the branch has been named, you can select 'Create Branch' to push the branch to your repository.
+Clone the project:
 
-- IntelliJ method
-> In IntelliJ, Go to the 'Git' button on the top toolbar. Select the new branch option and create a name for the branch. Make sure checkout branch is selected and press create. You can now add a commit message and push the new branch to the local repo.
+`git clone https://github.com/saksben/d288-back-end-programming.git`
 
-## SUPPORT
-If you need additional support, please navigate to the course page and reach out to your course instructor.
-## FUTURE USE
-Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
+Open in IDE (built for IntelliJ)
 
+Run the program to start up the back end
+
+Open the program in a terminal and navigate to `frontend/"D288 Front End"`
+
+Enter the command `ng serve` to start up the front end
+
+Navigate to `http://localhost:4200/` to access the application
+
+Navigate to `http://localhost:8080/api` to access the back end
+
+** USE INSTRUCTIONS
+
+From the home page, you will see a list of vacations available to purchase.
+
+To add yourself as a customer, click the person icon on the left side, then click `Add Customer` and enter the information, then again click `Add Customer` to add yourself to the database. Your customer profile will appear in the list of customers now.
+
+To purchase a vacation, click the shopping cart icon next to the desired vacation. Then once you are on the vacation's profile, click `Select Excursions` and click the shopping cart icon next to the desired excursions and then click `Add Excursion` when on its profile.
+
+To navigate back to the home page with all the vacations, click the shopping cart icon on the left.
+
+To add another person to your party size, indicate the number of people next to `Party Size` in the cart area on the right.
+
+To begin checkout, click the `Checkout` button on the right in the cart area. The customer will be the last customer inputted into the database, and his/her information will be displayed with a summary of the cart items. Click `Checkout` to make a purchase, which will generate a tracking number and display the customer information.
