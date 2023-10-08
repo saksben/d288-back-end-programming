@@ -10,7 +10,7 @@ Through it, I was able to:
 * Develop customer cart, checkout service, and order tracking features to fulfill travel excursion orders
 * Incorporate MVC framework using REST API, complete with validation and sample customer data
 
-** BASIC INSTRUCTIONS
+## BASIC INSTRUCTIONS
 
 Clone the project:
 
@@ -28,7 +28,7 @@ Navigate to `http://localhost:4200/` to access the application
 
 Navigate to `http://localhost:8080/api` to access the back end
 
-** USE INSTRUCTIONS
+## USE INSTRUCTIONS
 
 From the home page, you will see a list of vacations available to purchase.
 
