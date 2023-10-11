@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7053e5ec-3de9-4947-8568-b4839d9bbb6f" name="Changes" comment="Part J, edited to update StatusType to &quot;ordered&quot;, plus moved Purchase DTO's to Services package">
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/controllers/CheckoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/controllers/CheckoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/entities/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/entities/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/entities/StatusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/assessment/demo/entities/StatusType.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2SjW9aJkiT5ojECY9NBQ1iQvpO0" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/saksb/OneDrive/Desktop/Macbook/Desktop/Notes/Coding/School/WGU/D288 Back End Programming/PA/Project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fe01ce2a7fbac8fafaed7c982a04e229&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\saksb\OneDrive\Desktop\Macbook\Desktop\Notes\Coding\School\WGU\D288 Back End Programming\PA\Project\demo\src\main\java\com\assessment\demo\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\saksb\OneDrive\Desktop\Macbook\Desktop\Notes\Coding\School\WGU\D288 Back End Programming\PA\Project" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.assessment.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7053e5ec-3de9-4947-8568-b4839d9bbb6f" name="Changes" comment="" />
+      <created>1689660319814</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689660319814</updated>
+      <workItem from="1689660321830" duration="35163000" />
+      <workItem from="1690056802282" duration="19890000" />
+      <workItem from="1690151938095" duration="6859000" />
+      <workItem from="1690176257546" duration="6626000" />
+      <workItem from="1690183847794" duration="368000" />
+      <workItem from="1690251137108" duration="2327000" />
+      <workItem from="1690337713043" duration="440000" />
+      <workItem from="1690338173151" duration="2295000" />
+      <workItem from="1690483709668" duration="12380000" />
+      <workItem from="1691596021785" duration="1948000" />
+      <workItem from="1691781268362" duration="90000" />
+      <workItem from="1694295042401" duration="1428000" />
+      <workItem from="1696803630913" duration="1532000" />
+      <workItem from="1696917190402" duration="2936000" />
+    </task>
+    <task id="LOCAL-00001" summary="Part B">
+      <created>1689732590655</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689732590655</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Part C">
+      <created>1689733674153</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689733674153</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Part C.2 - Proof that I made the folders as requested">
+      <created>1689733876455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689733876455</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Part D">
+      <created>1689748569644</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689748569644</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Part E">
+      <created>1689826738073</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689826738073</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Part G, also specified the repos as RestRepos">
+      <created>1690075868282</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690075868282</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated Division so that divisions now show up in customer creator and customers can be added">
+      <created>1690161604674</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690161604674</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Part H">
+      <created>1690165079674</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690165079674</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Part I, also edited validation for inclusivity of phone number inputs and Canadian/UK postal codes">
+      <created>1690180342286</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690180342286</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Part J">
+      <created>1690182456719</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690182456719</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Part J, edited to update StatusType to &quot;ordered&quot;, plus moved Purchase DTO's to Services package">
+      <created>1691270198649</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1691270198649</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Part B" />
+    <MESSAGE value="Part C" />
+    <MESSAGE value="Part C.2 - Proof that I made the folders as requested" />
+    <MESSAGE value="Part D" />
+    <MESSAGE value="Part E" />
+    <MESSAGE value="Part F, also added an add() method to Cart so the CheckoutServiceImpl can add CartItems on purchase" />
+    <MESSAGE value="Part G, also specified the repos as RestRepos" />
+    <MESSAGE value="Updated Division so that divisions now show up in customer creator and customers can be added" />
+    <MESSAGE value="Part H" />
+    <MESSAGE value="Part I, also edited validation for inclusivity of phone number inputs and Canadian/UK postal codes" />
+    <MESSAGE value="Part J" />
+    <MESSAGE value="Part J, edited to update StatusType to &quot;ordered&quot;, plus moved Purchase DTO's to Services package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part J, edited to update StatusType to &quot;ordered&quot;, plus moved Purchase DTO's to Services package" />
+  </component>
+</project>

@@ -56,6 +56,7 @@ public class Cart {
     public Cart() {
     }
 
+    //adds a CartItem to the Cart
     public void add(CartItem item) {
         if (item != null) {
             if (cartItem == null) {

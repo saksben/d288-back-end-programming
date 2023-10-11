@@ -77,6 +77,7 @@ public class Customer {
         this.division = division;
     }
 
+    //gives the Customer a Cart
     public void add(Cart cart) {
         if (cart != null) {
             if (carts == null) {

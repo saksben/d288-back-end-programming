@@ -20,6 +20,7 @@ public class Bootstrap implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+        //adds sample customers to the db
         Division tonyDiv = divisionRepository.findById(Long.valueOf(4)).orElse(null);
         Division peterDiv = divisionRepository.findById(Long.valueOf(38)).orElse(null);
         Division sherlockDiv = divisionRepository.findById(Long.valueOf(101)).orElse(null);

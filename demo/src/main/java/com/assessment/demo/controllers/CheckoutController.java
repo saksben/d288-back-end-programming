@@ -18,6 +18,7 @@ public class CheckoutController {
         this.checkoutService = checkoutService;
     }
 
+    //takes a Purchase and places an order in the checkout, giving a PurchaseResponse
     @PostMapping("/purchase")
     public PurchaseResponse placeOrder(@RequestBody Purchase purchase) {
         PurchaseResponse purchaseResponse = checkoutService.placeOrder(purchase);
