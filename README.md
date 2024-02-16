@@ -1,8 +1,6 @@
 # Travel Agency Backend
 
-## D288 – BACK-END PROGRAMMING
-
-This university project was an opportunity for me to develop object-oriented applications that can be integrated with relational databases, write code for object-oriented applications using Spring framework, and implements design patterns for object-oriented applications. 
+This project was an opportunity for me to develop object-oriented applications that can be integrated with relational databases, write code for object-oriented applications using Spring framework, and implements design patterns for object-oriented applications. 
 
 Through it, I was able to:
 
